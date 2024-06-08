@@ -1,18 +1,18 @@
-def update_numbers(num1, num2):
-    if num1 == num2:
-        return "Числа num1 і num2 повинні бути різними."
+def update_numbers(number1, number2):
+    if number1 == number2:
+        return "The numbers number1 and number2 must be different."
     else:
-        if num1 < num2:
-            num1 = (num1 + num2) / 2
-            num2 = 2 * num1 * num2
+        if number1 < number2:
+            number1 = (number1 + number2) / 2
+            number2 = 2 * number1 * number2
         else:
-            num2 = (num1 + num2) / 2
-            num1 = 2 * num1 * num2
+            number2 = (number1 + number2) / 2
+            number1 = 2 * number1 * number2
 
-        return "Після заміни: num1 = {}, num2 = {}".format(num1, num2)
+        return "After update: number1 = {}, number2 = {}".format(number1, number2)
 
-num1 = float(input("Введіть число num1: "))
-num2 = float(input("Введіть число num2: "))
+number1 = float(input("Enter number1: "))
+number2 = float(input("Enter number2: "))
 
-result = update_numbers(num1, num2)
+result = update_numbers(number1, number2)
 print(result)

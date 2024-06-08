@@ -6,6 +6,6 @@ for _ in range(9999):
     if number == 0:
         break
     
-    total += number  # Додати введене число до загальної суми
+    total += number
 
-print("Сума введених чисел:", total)  # Вивести суму введених чисел
+print("Сума введених чисел:", total)

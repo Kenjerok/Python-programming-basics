@@ -5,16 +5,16 @@ def compare_point_distances(x1, y1, x2, y2):
     distance_point_B = math.sqrt(x2**2 + y2**2)
 
     if distance_point_A < distance_point_B:
-        return "Точка A знаходиться ближче до початку координат."
+        return "Point A is closer to the origin."
     elif distance_point_B < distance_point_A:
-        return "Точка B знаходиться ближче до початку координат."
+        return "Point B is closer to the origin."
     else:
-        return "Точки знаходяться на однаковій відстані до початку координат."
+        return "Both points are at the same distance from the origin."
 
-coordinate_x1 = float(input("Введіть координату x першої точки (A): "))
-coordinate_y1 = float(input("Введіть координату y першої точки (A): "))
-coordinate_x2 = float(input("Введіть координату x другої точки (B): "))
-coordinate_y2 = float(input("Введіть координату y другої точки (B): "))
+coordinate_x1 = float(input("Enter the x-coordinate of the first point (A): "))
+coordinate_y1 = float(input("Enter the y-coordinate of the first point (A): "))
+coordinate_x2 = float(input("Enter the x-coordinate of the second point (B): "))
+coordinate_y2 = float(input("Enter the y-coordinate of the second point (B): "))
 
 comparison_result = compare_point_distances(coordinate_x1, coordinate_y1, coordinate_x2, coordinate_y2)
 print(comparison_result)

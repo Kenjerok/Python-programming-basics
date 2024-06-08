@@ -5,15 +5,15 @@ def calculate_power(number):
         result = number ** 4
     return result
 
-num1 = float(input("Введіть перше число: "))
-num2 = float(input("Введіть друге число: "))
-num3 = float(input("Введіть третє число: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
 
 num1_result = calculate_power(num1)
 num2_result = calculate_power(num2)
 num3_result = calculate_power(num3)
 
-print("Результати піднесення до степеня:")
-print("Число 1:", num1, "Результат:", num1_result)
-print("Число 2:", num2, "Результат:", num2_result)
-print("Число 3:", num3, "Результат:", num3_result)
+print("Power calculation results:")
+print("Number 1:", num1, "Result:", num1_result)
+print("Number 2:", num2, "Result:", num2_result)
+print("Number 3:", num3, "Result:", num3_result)

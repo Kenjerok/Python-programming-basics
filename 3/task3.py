@@ -1,16 +1,16 @@
 def validate_triangle(angle_a, angle_b):
     if angle_a + angle_b >= 180:
-        return "Такий трикутник не існує, оскільки сума кутів перевищує або дорівнює 180 градусів."
+        return "Such a triangle does not exist, as the sum of the angles is greater than or equal to 180 degrees."
     else:
-        result = "Такий трикутник існує.\n"
+        result = "Such a triangle exists.\n"
         if angle_a == 90 or angle_b == 90 or (180 - angle_a - angle_b) == 90:
-            result += "Трикутник є прямокутним."
+            result += "The triangle is a right triangle."
         else:
-            result += "Трикутник не є прямокутним."
+            result += "The triangle is not a right triangle."
         return result
 
-angle_a = float(input("Введіть величину першого кута трикутника (в градусах): "))
-angle_b = float(input("Введіть величину другого кута трикутника (в градусах): "))
+angle_a = float(input("Enter the measure of the first angle of the triangle (in degrees): "))
+angle_b = float(input("Enter the measure of the second angle of the triangle (in degrees): "))
 
 validation_result = validate_triangle(angle_a, angle_b)
 print(validation_result)

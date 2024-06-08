@@ -4,12 +4,12 @@ def check_divisibility(num1, num2, num3, divisor):
     else:
         return False
 
-num1 = int(input("Введіть перше число (num1): "))
-num2 = int(input("Введіть друге число (num2): "))
-num3 = int(input("Введіть третє число (num3): "))
-divisor = int(input("Введіть число-дільник (divisor): "))
+num1 = int(input("Enter the first number (num1): "))
+num2 = int(input("Enter the second number (num2): "))
+num3 = int(input("Enter the third number (num3): "))
+divisor = int(input("Enter the divisor (divisor): "))
 
 if check_divisibility(num1, num2, num3, divisor):
-    print(f"Число {divisor} є дільником для {num1}, {num2} та {num3}.")
+    print(f"The number {divisor} is a divisor for {num1}, {num2}, and {num3}.")
 else:
-    print(f"Число {divisor} не є дільником для {num1}, {num2} та {num3}.")
+    print(f"The number {divisor} is not a divisor for {num1}, {num2}, and {num3}.")

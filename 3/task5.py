@@ -1,24 +1,24 @@
-def determine_point_location(coord_x, coord_y):
-    if coord_x == 0 and coord_y == 0:
-        return "Точка знаходиться в початку координат."
-    elif coord_x == 0:
-        return "Точка знаходиться на вісі Y."
-    elif coord_y == 0:
-        return "Точка знаходиться на вісі X."
+def determine_point_location(x, y):
+    if x == 0 and y == 0:
+        return "The point is at the origin."
+    elif x == 0:
+        return "The point is on the Y-axis."
+    elif y == 0:
+        return "The point is on the X-axis."
     else:
-        if coord_x > 0:
-            if coord_y > 0:
-                return "Точка знаходиться в першому квадранті."
+        if x > 0:
+            if y > 0:
+                return "The point is in the first quadrant."
             else:
-                return "Точка знаходиться в четвертому квадранті."
+                return "The point is in the fourth quadrant."
         else:
-            if coord_y > 0:
-                return "Точка знаходиться в другому квадранті."
+            if y > 0:
+                return "The point is in the second quadrant."
             else:
-                return "Точка знаходиться в третьому квадранті."
+                return "The point is in the third quadrant."
 
-coord_x = float(input("Введіть координату x точки A: "))
-coord_y = float(input("Введіть координату y точки A: "))
+x = float(input("Enter the x-coordinate of point A: "))
+y = float(input("Enter the y-coordinate of point A: "))
 
-location_result = determine_point_location(coord_x, coord_y)
+location_result = determine_point_location(x, y)
 print(location_result)

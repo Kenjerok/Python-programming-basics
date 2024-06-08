@@ -9,8 +9,8 @@ def update_values(value1, value2):
 
     return value1, value2
 
-value1 = int(input("Введіть значення для першої змінної: "))
-value2 = int(input("Введіть значення для другої змінної: "))
+value1 = int(input("Enter the value for the first variable: "))
+value2 = int(input("Enter the value for the second variable: "))
 
 value1, value2 = update_values(value1, value2)
-print("Після заміни: value1 =", value1, ", value2 =", value2)
+print("After update: value1 =", value1, ", value2 =", value2)
