@@ -30,21 +30,20 @@ class MurderInTheRueMorgue(Works):
     def get_message(self):
         return "Вбивство на вулиці Морг"
 
-class Fantasy:
-    def __init__(self):
-        self.books = [ChroniclesOfNarnia(), AmphibianMan()]
-
+class Fantasy(ChroniclesOfNarnia, AmphibianMan):
     def get_messages(self):
-        return [book.get_message() for book in self.books]
+        return [ChroniclesOfNarnia.get_message(self), AmphibianMan.get_message(self)]
 
-class Detective:
-    def __init__(self):
-        self.books = [CrimeAndPunishment() ,ManInABrownSuit(), MurderInTheRueMorgue()]
-
+class Adventures(GulliversTravels, IslandsInTheOcean):
     def get_messages(self):
-        return [book.get_message() for book in self.books]
+        return [GulliversTravels.get_message(self), IslandsInTheOcean.get_message(self)]
+
+class Detective(CrimeAndPunishment, ManInABrownSuit, MurderInTheRueMorgue):
+    def get_messages(self):
+        return [CrimeAndPunishment.get_message(self), ManInABrownSuit.get_message(self), MurderInTheRueMorgue.get_message(self)]
 
 fantasy = Fantasy()
+adventures = Adventures()
 detective = Detective()
 
 print("Фантастика:", fantasy.get_messages())
